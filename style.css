@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+ background-color:#FFFFFF;
+}
+
+.currentpage{
+ background-color:#CCCCFF;
+}
+
+.actionbutton{
+ background-color:#CCCCFF;
+}
+.scheduled{
+  background-color:#33FF00;
+}
+
+.space{
+  background-color:#FFFFFF;
+  border:0px;
+}
+
+.null{
+  background-color:#FFFFFF;
+  border:0px;
+  padding: 5px;
+}
+
+table{
+ border-collapse:collapse;
+}
+
+table td{
+ background-color:#E0E0E0;
+ border:1px solid black;
+ padding:15px;
+}
+
+table td a{
+ font-size:14px;
+ color:#404040;
+ text-decoration:none;
+}
+
+*{
+ font-family:Arial,Helvetica,sans-serif;
+ font-size:18px;
+}
+
+h1{
+ color:#003366;
+ font-size:25px;
+ font-weight:bold;
+}
+
+a{
+ color:#003366;
+}
