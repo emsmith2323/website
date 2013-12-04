@@ -11,8 +11,8 @@
 <!--banner-->
 <table>
 <tr>
-<td class="currentpage"><a href="./load.php">Load</a></td>
-<td><a href="./ondemand.php">On Demand</a></td>
+<td><a href="./load.php">Load</a></td>
+<td class="currentpage"><a href="./ondemand.php">On Demand</a></td>
 <td><a href="./schedule.php">Schedule</a></td>
 <td><a href="./names.php">Set Names</a></td>
 </tr>
@@ -44,10 +44,10 @@ if (isset($_POST['p1']))
 {
 
 //define strings used in performing sql transactions	 
-$sql_update = "INSERT INTO on_demand (pill_number,pet_number) VALUES (1,0)";
+$sql_update = "INSERT INTO on_demand (pill_number,pet_number) VALUES (1,1)";
 
 mysqli_query($con,$sql_update); 
-echo "<br>Loading Pill 1 for " . $name1;
+echo "<br>Calling " . $name1 . " to take Pill 1";
 
 unset($_POST['p1']);
 }
@@ -56,10 +56,10 @@ if (isset($_POST['p2']))
 {
 
 //define strings used in performing sql transactions     
-$sql_update = "INSERT INTO on_demand (pill_number,pet_number) VALUES (2,0)";
+$sql_update = "INSERT INTO on_demand (pill_number,pet_number) VALUES (2,1)";
 
 mysqli_query($con,$sql_update); 
-echo "<br>Loading Pill 2 for " . $name1;
+echo "<br>Calling " . $name1 . " to take Pill 2";
 
 
 unset($_POST['p2']);
@@ -69,10 +69,10 @@ if (isset($_POST['p3']))
 {
 
 //define strings used in performing sql transactions     
-$sql_update = "INSERT INTO on_demand (pill_number,pet_number) VALUES (3,0)";
+$sql_update = "INSERT INTO on_demand (pill_number,pet_number) VALUES (3,1)";
 
 mysqli_query($con,$sql_update); 
-echo "<br>Loading Pill 3 for " . $name1;
+echo "<br>Calling " . $name1 . " to take Pill 3";
 
 unset($_POST['p3']);
 }
@@ -81,10 +81,10 @@ if (isset($_POST['p4']))
 {
 
 //define strings used in performing sql transactions     
-$sql_update = "INSERT INTO on_demand (pill_number,pet_number) VALUES (4,0)";
+$sql_update = "INSERT INTO on_demand (pill_number,pet_number) VALUES (4,2)";
 
 mysqli_query($con,$sql_update); 
-echo "<br>Loading Pill 1 for " . $name2;
+echo "<br>Calling " . $name2 . " to take Pill 1";
 
 unset($_POST['p4']);
 }
@@ -93,10 +93,10 @@ if (isset($_POST['p5']))
 {
 
 //define strings used in performing sql transactions     
-$sql_update = "INSERT INTO on_demand (pill_number,pet_number) VALUES (5,0)";
+$sql_update = "INSERT INTO on_demand (pill_number,pet_number) VALUES (5,2)";
 
 mysqli_query($con,$sql_update); 
-echo "<br>Loading Pill 2 for " . $name2;
+echo "<br>Calling " . $name2 . " to take Pill 2";
 
 unset($_POST['p5']);
 }
@@ -105,10 +105,10 @@ if (isset($_POST['p6']))
 {
 
 //define strings used in performing sql transactions     
-$sql_update = "INSERT INTO on_demand (pill_number,pet_number) VALUES (6,0)";
+$sql_update = "INSERT INTO on_demand (pill_number,pet_number) VALUES (6,2)";
 
 mysqli_query($con,$sql_update); 
-echo "<br>Loading Pill 3 for " . $name2;
+echo "<br>Calling " . $name2 . " to take Pill 3";
 
 unset($_POST['p6']);
 }
@@ -128,7 +128,7 @@ mysqli_close($con);
 <h3>Select location to fill</h3>
 <br>
 
-<form action="load.php" method="post">
+<form action="ondemand.php" method="post">
 <table>
 <tr>
 <th class="one"><?php echo $name1; ?></th>
