@@ -21,7 +21,7 @@
 
 <?php
 //Pet Number to use
-$thisPetNumber=2
+//$thisPetNumber=2
 
 // Create connection
 $con=mysqli_connect(localhost,"root","raspberry","rpmd");
@@ -32,41 +32,46 @@ if (mysqli_connect_errno())
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
   }
 
-$result=mysqli_query($con,"SELECT * FROM pet_names WHERE $thisPetNumber");
+$result=mysqli_query($con,"SELECT * FROM pet_names");
 $name1="";
+$name2="";
+
 
 while ($row = mysqli_fetch_array($result))
  {
   if($row[0]==1) $name1=$row['pet_name'];
+  if($row[0]==2) $name2=$row['pet_name'];
   }
 
-$pill1=mysqli_query($con,"SELECT * FROM pill_schedule WHERE pill_number=4");
-$p1mon="notsched"
-$p1tue="notsched"
-$p1wed="notsched"
-$p1thu="notsched"
-$p1fri="notsched"
-$p1sat="notsched"
-$p1sun="notsched"
+$pillrows=mysqli_query($con,"SELECT * FROM pill_schedule WHERE pill_number=4");
+$p1mon="notsched";
+$p1tue="notsched";
+$p1wed="notsched";
+$p1thu="notsched";
+$p1fri="notsched";
+$p1sat="notsched";
+$p1sun="notsched";
 
-while ($pillrows=mysqli_fetch_array($pill1))
+
+while ($pill1=mysqli_fetch_array($pillrows))
 {
- $p1time=$pill1[deliver_time];
- if($pill1[deliver_day]=0] $p1sun="scheduled";
- if($pill1[deliver_day]=1] $p1mon="scheduled";
- if($pill1[deliver_day]=2] $p1tue="scheduled";
- if($pill1[deliver_day]=3] $p1wed="scheduled";
- if($pill1[deliver_day]=4] $p1thu="scheduled";
- if($pill1[deliver_day]=5] $p1fri="scheduled";
- if($pill1[deliver_day]=6] $p1sat="scheduled";
+ $p1time=$pill1[3];
+ if($pill1[2]==0) $p1sun="scheduled";
+ if($pill1[2]==1) $p1mon="scheduled";
+ if($pill1[2]==2) $p1tue="scheduled";
+ if($pill1[2]==3) $p1wed="scheduled";
+ if($pill1[2]==4) $p1thu="scheduled";
+ if($pill1[2]==5) $p1fri="scheduled";
+ if($pill1[2]==6) $p1sat="scheduled";
 }
+
 
 //close sql connection
 mysqli_close($con);
 ?>
 
 
-<h3><?php echo $name1; ?> : Current Schedule</h3>
+<h3><?php echo $name2; ?> : Current Schedule</h3>
 
 <hr>
 
@@ -74,8 +79,9 @@ mysqli_close($con);
 <tr>
 <th class="one">Pill 1</a></th>
 </tr>
+
 <tr>
-<td class="null"></td>";
+<td class="null"><?php  echo substr($p1time,0,5); ?></td>
 <td class="<?php echo $p1mon; ?>"><a href="./one.html">Mon</a></td>
 <td class="null"></td>
 <td class="<?php echo $p1tue; ?>"><a href="./four.html">Tue</a></td>
@@ -92,6 +98,8 @@ mysqli_close($con);
 <td class="space"></td>
 <td class="actionbutton"><a href="./four.html">Delete</a></td>
 </tr>
+
+
 </table>
 
 <hr>
