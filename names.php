@@ -11,10 +11,10 @@
 <!--banner-->
 <table>
 <tr>
-<td><a href="./load.html">Load</a></td>
-<td><a href="./ondemand.html">On Demand</a></td>
-<td><a href="./schedule.html">Schedule</a></td>
-<td class="currentpage"><a href="./nameentry.html">Set Names</a></td>
+<td><a href="./load.php">Load</a></td>
+<td><a href="./ondemand.php">On Demand</a></td>
+<td><a href="./schedule.php">Schedule</a></td>
+<td class="currentpage"><a href="./names.php">Set Names</a></td>
 </tr>
 </table>
 <!--end banner-->

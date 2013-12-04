@@ -43,7 +43,7 @@ while ($row = mysqli_fetch_array($result))
   if($row[0]==2) $name2=$row['pet_name'];
   }
 
-$pill1rows=mysqli_query($con,"SELECT * FROM pill_schedule WHERE pill_number=4");
+$pill1rows=mysqli_query($con,"SELECT * FROM pill_schedule WHERE pill_number=1");
 $p1mon="notsched";
 $p1tue="notsched";
 $p1wed="notsched";
@@ -65,7 +65,7 @@ while ($pill1=mysqli_fetch_array($pill1rows))
  if($pill1[2]==6) $p1sat="scheduled";
 }
 
-$pill2rows=mysqli_query($con,"SELECT * FROM pill_schedule WHERE pill_number=5");
+$pill2rows=mysqli_query($con,"SELECT * FROM pill_schedule WHERE pill_number=2");
 $p2mon="notsched";
 $p2tue="notsched";
 $p2wed="notsched";
@@ -87,7 +87,7 @@ while ($pill2=mysqli_fetch_array($pill2rows))
  if($pill2[2]==6) $p2sat="scheduled";
 }
 
-$pill3rows=mysqli_query($con,"SELECT * FROM pill_schedule WHERE pill_number=6");
+$pill3rows=mysqli_query($con,"SELECT * FROM pill_schedule WHERE pill_number=3");
 $p3mon="notsched";
 $p3tue="notsched";
 $p3wed="notsched";
@@ -115,7 +115,7 @@ mysqli_close($con);
 ?>
 
 
-<h3><?php echo $name2; ?> : Current Schedule</h3>
+<h3><?php echo $name1; ?> : Current Schedule</h3>
 
 <hr>
 
@@ -200,7 +200,7 @@ mysqli_close($con);
 
 <table>
 <tr>
-<td class="actionbutton"><a href="./modifytwo.php">Change</td>
+<td class="actionbutton"><a href="./modifyone.php">Change</td>
 </tr>
 </table>
 

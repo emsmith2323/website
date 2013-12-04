@@ -11,8 +11,8 @@
 <!--banner-->
 <table>
 <tr>
-<td><a href="./load.html">Load</a></td>
-<td><a href="./ondemand.html">On Demand</a></td>
+<td><a href="./load.php">Load</a></td>
+<td><a href="./ondemand.php">On Demand</a></td>
 <td class="currentpage"><a href="./schedule.php">Schedule</a></td>
 <td><a href="./names.php">Set Names</a></td>
 </tr>
@@ -47,9 +47,9 @@ mysqli_close($con);
 
 <table>
 <tr>
-<td class="one"><a href="./schedone.html"><?php echo $name1; ?></a></td>
+<td class="one"><a href="./schedone.php"><?php echo $name1; ?></a></td>
 <td class="space"></td>
-<td class="one"><a href="./schedtwo.html"><?php echo $name2; ?></a></td>
+<td class="one"><a href="./schedtwo.php"><?php echo $name2; ?></a></td>
 </tr>
 </table>
 
