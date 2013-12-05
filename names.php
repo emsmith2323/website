@@ -75,9 +75,9 @@ mysqli_close($con);
 <h3>Enter Names</h3>
 <br>
 <form action="names.php" method="post">
-Pet 1:<br><input type="text" name="p1" value="<?php echo $name1; ?>">
+Pet 1 (green collar):<br><input type="text" name="p1" value="<?php echo $name1; ?>">
 <br><br>
-Pet 2:<br><input type="text" name="p2" value="<?php echo $name2; ?>">
+Pet 2 (pink collar):<br><input type="text" name="p2" value="<?php echo $name2; ?>">
 <br><br>
 <input type="submit" value="Save">
 </form>
