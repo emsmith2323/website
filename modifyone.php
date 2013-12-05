@@ -35,7 +35,7 @@ if (mysqli_connect_errno())
 if (isset($_POST['save'])) {
 
  //define strings used in performing sql transactions	 
- $sql_update = "DELETE * FROM pill_schedule WHERE pet_number='1'";
+ $sql_update = "DELETE FROM pill_schedule WHERE pet_number=1";
 
  mysqli_query($con,$sql_update); 
 
@@ -51,13 +51,15 @@ if (isset($_POST['p1']))
   if (isset($_POST['p1m']))
   {
     //define strings used in performing sql transactions	 
-    $sql_update = "INSERT INTO pill_schedule (pill_number,pet_number,deliver_day,deliver_time)
-                   VALUES (1,1,'mon','$_POST['p1']:00')";
+    $sql_update = "INSERT INTO pill_schedule (pill_number,pet_number,deliver_day,deliver_time) VALUES (1,1,1,'$_POST[p1]')";
 
     mysqli_query($con,$sql_update); 
 
     unset($_POST['p1m']);
   }
+
+
+/*
 
   //If tuesday is checked, insert time
   if (isset($_POST['p1t']))
@@ -131,11 +133,12 @@ if (isset($_POST['p1']))
     unset($_POST['p1u']);
   }
 
-
+*/
 
 unset($_POST['p1']);
 }
 
+/*
 
 //If a time is set for pill 2, then set days
 if (isset($_POST['p2']))
@@ -325,7 +328,7 @@ if (isset($_POST['p3']))
 unset($_POST['p3']);
 }
 
-
+*/
 
 $result=mysqli_query($con,"SELECT * FROM pet_names");
 $name1="";
