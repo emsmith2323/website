@@ -66,7 +66,7 @@ if (isset($_POST['p1']))
   {
     //define strings used in performing sql transactions	 
     $sql_update = "INSERT INTO pill_schedule (pill_number,pet_number,deliver_day,deliver_time)
-                   VALUES (1,1,'tue','$_POST['p1']:00')";
+                   VALUES (1,1,'tue','$_POST[p1]')";
 
     mysqli_query($con,$sql_update); 
 
@@ -78,7 +78,7 @@ if (isset($_POST['p1']))
   {
     //define strings used in performing sql transactions	 
     $sql_update = "INSERT INTO pill_schedule (pill_number,pet_number,deliver_day,deliver_time)
-                   VALUES (1,1,'wed','$_POST['p1']:00')";
+                   VALUES (1,1,'wed','$_POST[p1]')";
 
     mysqli_query($con,$sql_update); 
 
@@ -90,7 +90,7 @@ if (isset($_POST['p1']))
   {
     //define strings used in performing sql transactions	 
     $sql_update = "INSERT INTO pill_schedule (pill_number,pet_number,deliver_day,deliver_time)
-                   VALUES (1,1,'thu','$_POST['p1']:00')";
+                   VALUES (1,1,'thu','$_POST[p1]')";
 
     mysqli_query($con,$sql_update); 
 
@@ -102,7 +102,7 @@ if (isset($_POST['p1']))
   {
     //define strings used in performing sql transactions	 
     $sql_update = "INSERT INTO pill_schedule (pill_number,pet_number,deliver_day,deliver_time)
-                   VALUES (1,1,'fri','$_POST['p1']:00')";
+                   VALUES (1,1,'fri','$_POST[p1]')";
 
     mysqli_query($con,$sql_update); 
 
@@ -114,7 +114,7 @@ if (isset($_POST['p1']))
   {
     //define strings used in performing sql transactions	 
     $sql_update = "INSERT INTO pill_schedule (pill_number,pet_number,deliver_day,deliver_time)
-                   VALUES (1,1,'sat','$_POST['p1']:00')";
+                   VALUES (1,1,'sat','$_POST[p1]')";
 
     mysqli_query($con,$sql_update); 
 
@@ -126,7 +126,7 @@ if (isset($_POST['p1']))
   {
     //define strings used in performing sql transactions	 
     $sql_update = "INSERT INTO pill_schedule (pill_number,pet_number,deliver_day,deliver_time)
-                   VALUES (1,1,'sun','$_POST['p1']:00')";
+                   VALUES (1,1,'sun','$_POST[p1]')";
 
     mysqli_query($con,$sql_update); 
 
@@ -149,7 +149,7 @@ if (isset($_POST['p2']))
   {
     //define strings used in performing sql transactions	 
     $sql_update = "INSERT INTO pill_schedule (pill_number,pet_number,deliver_day,deliver_time)
-                   VALUES (2,1,'mon','$_POST['p2']:00')";
+                   VALUES (2,1,'mon','$_POST[p2]')";
 
     mysqli_query($con,$sql_update); 
 
@@ -161,7 +161,7 @@ if (isset($_POST['p2']))
   {
     //define strings used in performing sql transactions	 
     $sql_update = "INSERT INTO pill_schedule (pill_number,pet_number,deliver_day,deliver_time)
-                   VALUES (2,1,'tue','$_POST['p2']:00')";
+                   VALUES (2,1,'tue','$_POST[p2]')";
 
     mysqli_query($con,$sql_update); 
 
@@ -173,7 +173,7 @@ if (isset($_POST['p2']))
   {
     //define strings used in performing sql transactions	 
     $sql_update = "INSERT INTO pill_schedule (pill_number,pet_number,deliver_day,deliver_time)
-                   VALUES (2,1,'wed','$_POST['p2']:00')";
+                   VALUES (2,1,'wed','$_POST[p2]')";
 
     mysqli_query($con,$sql_update); 
 
@@ -185,7 +185,7 @@ if (isset($_POST['p2']))
   {
     //define strings used in performing sql transactions	 
     $sql_update = "INSERT INTO pill_schedule (pill_number,pet_number,deliver_day,deliver_time)
-                   VALUES (2,1,'thu','$_POST['p2']:00')";
+                   VALUES (2,1,'thu','$_POST[p2]')";
 
     mysqli_query($con,$sql_update); 
 
@@ -197,7 +197,7 @@ if (isset($_POST['p2']))
   {
     //define strings used in performing sql transactions	 
     $sql_update = "INSERT INTO pill_schedule (pill_number,pet_number,deliver_day,deliver_time)
-                   VALUES (2,1,'fri','$_POST['p2']:00')";
+                   VALUES (2,1,'fri','$_POST[p2]')";
 
     mysqli_query($con,$sql_update); 
 
@@ -209,7 +209,7 @@ if (isset($_POST['p2']))
   {
     //define strings used in performing sql transactions	 
     $sql_update = "INSERT INTO pill_schedule (pill_number,pet_number,deliver_day,deliver_time)
-                   VALUES (2,1,'sat','$_POST['p2']:00')";
+                   VALUES (2,1,'sat','$_POST[p2]')";
 
     mysqli_query($con,$sql_update); 
 
@@ -221,7 +221,7 @@ if (isset($_POST['p2']))
   {
     //define strings used in performing sql transactions	 
     $sql_update = "INSERT INTO pill_schedule (pill_number,pet_number,deliver_day,deliver_time)
-                   VALUES (2,1,'sun','$_POST['p2']:00')";
+                   VALUES (2,1,'sun','$_POST[p2]')";
 
     mysqli_query($con,$sql_update); 
 
@@ -244,7 +244,7 @@ if (isset($_POST['p3']))
   {
     //define strings used in performing sql transactions	 
     $sql_update = "INSERT INTO pill_schedule (pill_number,pet_number,deliver_day,deliver_time)
-                   VALUES (3,1,'mon','$_POST['p3']:00')";
+                   VALUES (3,1,'mon','$_POST[p3]')";
 
     mysqli_query($con,$sql_update); 
 
@@ -256,7 +256,7 @@ if (isset($_POST['p3']))
   {
     //define strings used in performing sql transactions	 
     $sql_update = "INSERT INTO pill_schedule (pill_number,pet_number,deliver_day,deliver_time)
-                   VALUES (3,1,'tue','$_POST['p3']:00')";
+                   VALUES (3,1,'tue','$_POST[p3]')";
 
     mysqli_query($con,$sql_update); 
 
@@ -268,7 +268,7 @@ if (isset($_POST['p3']))
   {
     //define strings used in performing sql transactions	 
     $sql_update = "INSERT INTO pill_schedule (pill_number,pet_number,deliver_day,deliver_time)
-                   VALUES (3,1,'wed','$_POST['p3']:00')";
+                   VALUES (3,1,'wed','$_POST[p3]')";
 
     mysqli_query($con,$sql_update); 
 
@@ -280,7 +280,7 @@ if (isset($_POST['p3']))
   {
     //define strings used in performing sql transactions	 
     $sql_update = "INSERT INTO pill_schedule (pill_number,pet_number,deliver_day,deliver_time)
-                   VALUES (3,1,'thu','$_POST['p3']:00')";
+                   VALUES (3,1,'thu','$_POST[p3]')";
 
     mysqli_query($con,$sql_update); 
 
@@ -292,7 +292,7 @@ if (isset($_POST['p3']))
   {
     //define strings used in performing sql transactions	 
     $sql_update = "INSERT INTO pill_schedule (pill_number,pet_number,deliver_day,deliver_time)
-                   VALUES (3,1,'fri','$_POST['p3']:00')";
+                   VALUES (3,1,'fri','$_POST[p3]')";
 
     mysqli_query($con,$sql_update); 
 
@@ -304,7 +304,7 @@ if (isset($_POST['p3']))
   {
     //define strings used in performing sql transactions	 
     $sql_update = "INSERT INTO pill_schedule (pill_number,pet_number,deliver_day,deliver_time)
-                   VALUES (3,1,'sat','$_POST['p3']:00')";
+                   VALUES (3,1,'sat','$_POST[p3]')";
 
     mysqli_query($con,$sql_update); 
 
@@ -316,7 +316,7 @@ if (isset($_POST['p3']))
   {
     //define strings used in performing sql transactions	 
     $sql_update = "INSERT INTO pill_schedule (pill_number,pet_number,deliver_day,deliver_time)
-                   VALUES (3,1,'sun','$_POST['p3']:00')";
+                   VALUES (3,1,'sun','$_POST[p3]')";
 
     mysqli_query($con,$sql_update); 
 
