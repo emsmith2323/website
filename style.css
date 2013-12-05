@@ -30,6 +30,13 @@ body{
 .input{
  border: 1px solid;}
 
+.loadbutton{
+ border:0px;
+ background-color:#E0E0E0;
+ 
+}
+
+
 table{
  border-collapse:collapse;
 }

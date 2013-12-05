@@ -1,6 +1,6 @@
 <html>
 
-<title>Load</title>
+<title>On Demand</title>
 
 <head>
 <link rel="stylesheet" type="text/css" href="style.css">
@@ -14,7 +14,7 @@
 <td><a href="./load.php">Load</a></td>
 <td class="currentpage"><a href="./ondemand.php">On Demand</a></td>
 <td><a href="./schedule.php">Schedule</a></td>
-<td><a href="./names.php">Set Names</a></td>
+<td><a href="./names.php">Set Options</a></td>
 </tr>
 </table>
 <!--end banner-->
@@ -136,21 +136,21 @@ mysqli_close($con);
 <th class="three"><?php echo $name2; ?></th>
 </tr>
 <tr>
-<td class="one"><input type="submit" name="p1" value="Pill 1" id="submit"></td>
+<td class="one"><input class="loadbutton" type="submit" name="p1" value="Pill 1" id="submit"></td>
 <td class="space"></td>
-<td class="one"><input type="submit" name="p4" value="Pill 1" id="submit"></td>
+<td class="one"><input class="loadbutton" type="submit" name="p4" value="Pill 1" id="submit"></td>
 
 </tr>
 <tr>
-<td class="one"><input type="submit" name="p2" value="Pill 2" id="submit"></td>
+<td class="one"><input class="loadbutton" type="submit" name="p2" value="Pill 2" id="submit"></td>
 <td class="space"></td>
-<td class="one"><input type="submit" name="p5" value="Pill 2" id="submit"></td>
+<td class="one"><input class="loadbutton" type="submit" name="p5" value="Pill 2" id="submit"></td>
 
 </tr>
 <tr>
-<td class="one"><input type="submit" name="p3" value="Pill 3" id="submit"></td>
+<td class="one"><input class="loadbutton" type="submit" name="p3" value="Pill 3" id="submit"></td>
 <td class="space"></td>
-<td class="one"><input type="submit" name="p6" value="Pill 3" id="submit"></td>
+<td class="one"><input class="loadbutton" type="submit" name="p6" value="Pill 3" id="submit"></td>
 
 </tr>
 </table>

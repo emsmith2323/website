@@ -1,6 +1,6 @@
 <html>
 
-<title>Enter Names</title>
+<title>Set Options</title>
 
 <head>
 <link rel="stylesheet" type="text/css" href="style.css">
@@ -14,7 +14,7 @@
 <td><a href="./load.php">Load</a></td>
 <td><a href="./ondemand.php">On Demand</a></td>
 <td><a href="./schedule.php">Schedule</a></td>
-<td class="currentpage"><a href="./names.php">Set Names</a></td>
+<td class="currentpage"><a href="./names.php">Set Options</a></td>
 </tr>
 </table>
 <!--end banner-->
@@ -51,12 +51,18 @@ mysqli_query($con,$sql_update);
 unset($_POST['p2']);
 }
 
-//post item to sql
-//if( $update_item == false) {
-//	die( print_r( sqlsrv_errors(),true));
-//	}
 
-//echo "record added";
+if (isset($_POST['email']) && $_POST['email'] != "")
+{
+
+//define strings used in performing sql transactions     
+$sql_update = "UPDATE user_params SET user_value='$_POST[email]' WHERE param_type='1'";
+
+mysqli_query($con,$sql_update); 
+
+unset($_POST['email']);
+}
+
 
 $result=mysqli_query($con,"SELECT * FROM pet_names ");
 $name1="";
@@ -67,19 +73,30 @@ while ($row = mysqli_fetch_array($result))
   if($row[0]==2) $name2=$row['pet_name'];
   }
 
+$params=mysqli_query($con,"SELECT * FROM user_params ");
+$emailaddr="";
+while ($paramrow = mysqli_fetch_array($params))
+ {
+  if($paramrow[0]==1) $emailaddr=$paramrow['user_value'];
+ }
+
 //close sql connection
 mysqli_close($con);
 ?>
 
 <body>
-<h3>Enter Names</h3>
+<h3>Enter Options</h3>
 <br>
 <form action="names.php" method="post">
 Pet 1 (green collar):<br><input type="text" name="p1" value="<?php echo $name1; ?>">
 <br><br>
 Pet 2 (pink collar):<br><input type="text" name="p2" value="<?php echo $name2; ?>">
 <br><br>
-<input type="submit" value="Save">
+Email:<br><input type="text" name="email" value="<?php echo $emailaddr; ?>">
+<br><br>
+<table>
+<td><input class="loadbutton" type="submit" value="Save"></td>
+</table>
 </form>
 
 </body>

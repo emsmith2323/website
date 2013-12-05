@@ -14,7 +14,7 @@
 <td><a href="./load.php">Load</a></td>
 <td><a href="./ondemand.php">On Demand</a></td>
 <td class="currentpage"><a href="./schedule.php">Schedule</a></td>
-<td><a href="./names.php">Set Names</a></td>
+<td><a href="./names.php">Set Options</a></td>
 </tr>
 </table>
 <!--end banner-->
@@ -200,7 +200,7 @@ mysqli_close($con);
 
 <table>
 <tr>
-<td class="actionbutton"><a href="./modifyone.php">Change</td>
+<td class="actionbutton"><a href="./modifyone.php">Change</a></td>
 </tr>
 </table>
 
