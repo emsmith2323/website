@@ -125,7 +125,7 @@ unset($_POST['p6']);
 mysqli_close($con);
 ?>
 
-<h3>Select location to fill</h3>
+<h3>Select Location to Fill</h3>
 <br>
 
 <form action="load.php" method="post">

@@ -43,7 +43,7 @@ mysqli_close($con);
 ?>
 
 <br>
-<h3>Select pet</h3>
+<h3>Select Pet</h3>
 
 <table>
 <tr>

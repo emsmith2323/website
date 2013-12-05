@@ -125,7 +125,7 @@ unset($_POST['p6']);
 mysqli_close($con);
 ?>
 
-<h3>Select location to fill</h3>
+<h3>Select Pill to Deliver</h3>
 <br>
 
 <form action="ondemand.php" method="post">
