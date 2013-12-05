@@ -59,7 +59,7 @@ if (isset($_POST['p1']))
   }
 
 
-/*
+
 
   //If tuesday is checked, insert time
   if (isset($_POST['p1t']))
@@ -133,12 +133,12 @@ if (isset($_POST['p1']))
     unset($_POST['p1u']);
   }
 
-*/
+
 
 unset($_POST['p1']);
 }
 
-/*
+
 
 //If a time is set for pill 2, then set days
 if (isset($_POST['p2']))
@@ -328,7 +328,7 @@ if (isset($_POST['p3']))
 unset($_POST['p3']);
 }
 
-*/
+
 
 $result=mysqli_query($con,"SELECT * FROM pet_names");
 $name1="";
